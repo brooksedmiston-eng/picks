@@ -2525,7 +2525,7 @@
   "sport": "NBA",
   "game": "",
   "start": "2026-11-18",
-  "pick": "wait",
+  "pick": "scanned",
   "odds_at_pick": "",
   "odds_now": "",
   "move": "none",
@@ -2535,13 +2535,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "Lines not posted yet",
+  "why": "Moneylines posted (no spreads/totals yet). 12 games run through the model; Raptors, Thunder and Pistons MLs show a 2+ point edge but are below the win-rate bar (watch only). Warriors +178 shows a big model gap, likely injury-driven, so not listed until injuries are checked.",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-13T16:44:38Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "scan-2026-11-18-nba-props",
@@ -4960,7 +4960,7 @@
    "Season margins say Los Angeles Lakers by +11.5; the pick needs better than +8.5",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5006,7 +5006,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "timing": "Bet now: early number. Check for injury news before tip.",
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5052,7 +5052,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "timing": "Bet now: early number. Check for injury news before tip.",
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5099,7 +5099,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "timing": "Bet now: early number. Check for injury news before tip.",
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5146,7 +5146,7 @@
    "Combined pace 70.5 vs league 70.7 (slower)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5193,7 +5193,7 @@
    "Combined pace 70.0 vs league 70.7 (slower)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5240,7 +5240,7 @@
    "Combined pace 77.4 vs league 70.7 (faster)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5287,7 +5287,7 @@
    "Combined pace 66.6 vs league 70.7 (slower)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5333,7 +5333,7 @@
    "Season margins say Akron Zips by +21.3; the pick needs better than +13.5",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -5379,7 +5379,7 @@
    "Season margins say Davidson Wildcats by +6.0; the pick needs better than +3.5",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -6427,7 +6427,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "pit-phi-u385",
@@ -6474,7 +6474,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "jax-nyg-u465",
@@ -6521,7 +6521,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "ari-kc-o415",
@@ -6568,7 +6568,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "lv-den-o405",
@@ -6615,7 +6615,7 @@
   ],
   "watch_top2": true,
   "unverified": true,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "min-sf-u455",
@@ -6662,7 +6662,7 @@
   ],
   "watch_top2": true,
   "unverified": true,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "cin-was-u525",
@@ -6709,7 +6709,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "mia-kent-o445",
@@ -6755,7 +6755,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "ball-ohio-ohio10",
@@ -6801,7 +6801,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "emu-wmu-wmu145",
@@ -6847,7 +6847,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "akr-umass-umass3",
@@ -6893,7 +6893,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "isu-ucf-isu25",
@@ -6939,7 +6939,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "unm-wyo-unm75",
@@ -6985,7 +6985,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "col-cin-u585",
@@ -7031,7 +7031,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "nw-minn-nw3",
@@ -7077,7 +7077,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "unt-tul-o565",
@@ -7123,7 +7123,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "hou-wvu-u705",
@@ -7169,7 +7169,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "osu-neb-o415",
@@ -7215,7 +7215,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "unc-uva-u435",
@@ -7261,7 +7261,7 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z"
+  "updated": "2026-11-17T22:10:00Z"
  },
  {
   "id": "cha-lal-lalml",
@@ -7307,7 +7307,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7320,13 +7320,13 @@
   "start": "2026-11-17",
   "pick": "UMass Lowell ML",
   "odds_at_pick": -335,
-  "odds_now": -335,
-  "move": "none",
-  "my_pct": 79.0,
-  "book_pct": 73.3,
-  "edge": 5.7,
+  "odds_now": -278,
+  "move": "favor",
+  "my_pct": 77.2,
+  "book_pct": 70.5,
+  "edge": 6.7,
   "stake": 10,
-  "to_win": 2.99,
+  "to_win": 3.6,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
@@ -7334,7 +7334,7 @@
   "why": "Model makes Lowell 90% to win at home against winless Saint Peter's (0-4, 47.5 points a game). Heavy favorite: $10.00 wins $2.99.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
   "bet_rule": "Staked: win-rate rule. UMass Lowell ML at -350 or better.",
-  "basis": "lookup.py ncaab UMass Lowell Saint Peter's: P(UMass Lowell wins)=89.6%. Blend 0.35 model / 0.65 book (early-season college). ScoresAndOdds moneylines.",
+  "basis": "lookup.py ncaab UMass Lowell Saint Peter's: P(UMass Lowell wins)=89.6%. Blend 0.35 model / 0.65 book (early-season college). ScoresAndOdds moneylines. Re-priced 22:10 UTC: ML moved -335 to -278 (ScoresAndOdds), no-vig 70.5%.",
   "timing": "Bet now: early number",
   "live": {
    "lg": "basketball/mens-college-basketball",
@@ -7354,7 +7354,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7400,13 +7400,13 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
   "id": "akr-umass-umassml",
   "day": "2026-11-18",
-  "tier": "best",
+  "tier": "likely",
   "confidence": "Medium",
   "sport": "NCAAF",
   "game": "Akron @ UMass",
@@ -7418,15 +7418,15 @@
   "my_pct": 62.7,
   "book_pct": 59.3,
   "edge": 3.4,
-  "stake": 2.84,
-  "to_win": 1.75,
+  "stake": 0,
+  "to_win": 0,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
   "result": "",
   "why": "Model makes UMass 69% to win. Season margins say UMass by 10.3.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
-  "bet_rule": "Staked: win-rate rule. UMass ML at -177 or better.",
+  "bet_rule": "Watch only: below the win-rate bar. UMass ML at -177 or better.",
   "basis": "lookup.py ncaaf Massachusetts Akron: P(UMass wins)=69.0%. Blend 0.35 model / 0.65 book (early-season college). ScoresAndOdds moneylines.",
   "timing": "Bet now: early number",
   "live": {
@@ -7446,7 +7446,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7492,7 +7492,7 @@
    "Stats lean: mixed (2 for, 1 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7538,7 +7538,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7584,7 +7584,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7630,7 +7630,7 @@
    "Stats lean: mixed (2 for, 1 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7677,7 +7677,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7724,7 +7724,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7771,7 +7771,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": true,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7818,7 +7818,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": true,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  },
  {
@@ -7865,7 +7865,145 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T20:50:00Z",
+  "updated": "2026-11-17T22:10:00Z",
+  "watch_top2": true
+ },
+ {
+  "id": "tor-was-torml",
+  "day": "2026-11-18",
+  "tier": "likely",
+  "confidence": "Low",
+  "sport": "NBA",
+  "game": "Wizards @ Raptors",
+  "start": "2026-11-18",
+  "pick": "Raptors ML",
+  "odds_at_pick": -223,
+  "odds_now": -223,
+  "move": "none",
+  "my_pct": 70.8,
+  "book_pct": 67.0,
+  "edge": 3.8,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "why": "Team model gives Raptors 77.9% to win; the market has 67.0% (no-vig). Season stats all point the same way.",
+  "risk": "Injury reports for Wednesday aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market). My % is below the 75% win-rate bar.",
+  "bet_rule": "Watch only: below the win-rate bar. Raptors ML at -235 or better.",
+  "basis": "lookup.py nba Raptors Wizards: P(home)=77.9%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 18 moneylines (spreads not posted yet).",
+  "timing": "Wait: check injury report and lineups Wednesday.",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Raptors",
+   "away": "Wizards",
+   "mkt": "ml",
+   "side": "home",
+   "line": 0
+  },
+  "stats": [
+   "Washington Wizards 4-9 (away 2-6), last 5 0-5 (-14.8 margin)",
+   "Toronto Raptors 5-7 (home 2-3), last 5 1-4 (-7.4 margin)",
+   "Net rating: Toronto Raptors +0.9 (14th of 30), Washington Wizards -7.3 (26th)",
+   "Scoring per game: Toronto Raptors 114.2 for / 112.8 against, Washington Wizards 110.0 / 115.8",
+   "Off/Def rating: Toronto Raptors 111.4 / 110.0, Washington Wizards 106.8 / 112.4; pace 102.5 vs 103.0",
+   "Season margins say Toronto Raptors by +5.6; the pick needs a win",
+   "Stats lean: supports (3 for, 0 against)"
+  ],
+  "updated": "2026-11-17T22:10:00Z",
+  "watch_top2": true
+ },
+ {
+  "id": "okc-atl-okcml",
+  "day": "2026-11-18",
+  "tier": "likely",
+  "confidence": "Low",
+  "sport": "NBA",
+  "game": "Hawks @ Thunder",
+  "start": "2026-11-18",
+  "pick": "Thunder ML",
+  "odds_at_pick": -212,
+  "odds_now": -212,
+  "move": "none",
+  "my_pct": 70.4,
+  "book_pct": 67.3,
+  "edge": 3.1,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "why": "Team model gives Thunder 76.0% to win; the market has 67.3% (no-vig). Season stats all point the same way.",
+  "risk": "Injury reports for Wednesday aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market). My % is below the 75% win-rate bar.",
+  "bet_rule": "Watch only: below the win-rate bar. Thunder ML at -225 or better.",
+  "basis": "lookup.py nba Thunder Hawks: P(home)=76.0%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 18 moneylines (spreads not posted yet).",
+  "timing": "Wait: check injury report and lineups Wednesday.",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Thunder",
+   "away": "Hawks",
+   "mkt": "ml",
+   "side": "home",
+   "line": 0
+  },
+  "stats": [
+   "Atlanta Hawks 7-6 (away 4-3), last 5 3-2 (+1.4 margin)",
+   "Oklahoma City Thunder 8-5 (home 5-0), last 5 2-3 (+7.8 margin)",
+   "Net rating: Oklahoma City Thunder +6.7 (5th of 30), Atlanta Hawks -0.7 (18th)",
+   "Scoring per game: Oklahoma City Thunder 111.2 for / 107.4 against, Atlanta Hawks 118.2 / 116.8",
+   "Off/Def rating: Oklahoma City Thunder 109.3 / 105.6, Atlanta Hawks 111.0 / 109.7; pace 101.7 vs 106.5",
+   "Season margins say Oklahoma City Thunder by +3.2; the pick needs a win",
+   "Stats lean: supports (3 for, 0 against)"
+  ],
+  "updated": "2026-11-17T22:10:00Z",
+  "watch_top2": true
+ },
+ {
+  "id": "nop-det-detml",
+  "day": "2026-11-18",
+  "tier": "best",
+  "confidence": "Low",
+  "sport": "NBA",
+  "game": "Pistons @ Pelicans",
+  "start": "2026-11-18",
+  "pick": "Pistons ML",
+  "odds_at_pick": -257,
+  "odds_now": -257,
+  "move": "none",
+  "my_pct": 72.7,
+  "book_pct": 69.9,
+  "edge": 2.8,
+  "stake": 3.17,
+  "to_win": 1.23,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "why": "Team model gives Pistons 77.8% to win; the market has 69.9% (no-vig). Season stats all point the same way. Heavy favorite: $3.17 wins $1.23.",
+  "risk": "Injury reports for Wednesday aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market). My % is below the 75% win-rate bar.",
+  "bet_rule": "Staked: win-rate rule. Pistons ML at -270 or better.",
+  "basis": "lookup.py nba Pelicans Pistons: P(home)=22.2%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 18 moneylines (spreads not posted yet).",
+  "timing": "Wait: check injury report and lineups Wednesday.",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Pelicans",
+   "away": "Pistons",
+   "mkt": "ml",
+   "side": "away",
+   "line": 0
+  },
+  "stats": [
+   "Detroit Pistons 8-4 (away 5-2), last 5 2-3 (-3.2 margin)",
+   "New Orleans Pelicans 4-10 (home 3-6), last 5 0-5 (-28.0 margin)",
+   "Net rating: New Orleans Pelicans -8.9 (29th of 30), Detroit Pistons +3.6 (10th)",
+   "Scoring per game: New Orleans Pelicans 115.9 for / 124.9 against, Detroit Pistons 115.7 / 110.2",
+   "Off/Def rating: New Orleans Pelicans 109.5 / 118.1, Detroit Pistons 112.5 / 107.2; pace 105.8 vs 102.8",
+   "Season margins say Detroit Pistons by +5.2; the pick needs a win",
+   "Stats lean: supports (3 for, 0 against)"
+  ],
+  "updated": "2026-11-17T22:10:00Z",
   "watch_top2": true
  }
 ]
