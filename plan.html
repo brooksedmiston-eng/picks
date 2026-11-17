@@ -263,7 +263,7 @@ table.out td.num, table.out th.num { text-align:right; }
   <header class="top">
     <div>
       <p class="eyebrow">Daily Picks Board</p>
-      <h1>Best day plan</h1>
+      <h1 id="pageH1">Best day plan</h1>
       <p class="updated">Picks last updated <span id="updatedTop">—</span></p>
     </div>
     <div class="head-r" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
@@ -276,7 +276,7 @@ table.out td.num, table.out th.num { text-align:right; }
     </div>
   </header>
 
-  <div class="tabs glass" role="tablist" aria-label="Plan type">
+  <div class="tabs glass" role="tablist" aria-label="Plan type" id="tabs">
     <button type="button" class="tab" role="tab" id="tabSafe" aria-selected="true">Highest chance to profit</button>
     <button type="button" class="tab" role="tab" id="tabEv" aria-selected="false">Highest expected profit</button>
   </div>
@@ -284,7 +284,8 @@ table.out td.num, table.out th.num { text-align:right; }
   <div id="planBody"></div>
 
   <footer>
-    <span>How this works: the page tries every combination of the day's qualifying single bets (2+ point edge, one bet per game, staked at the board's Kelly size, $75 cap) and works out the exact chance each combination ends the day with a profit, using My % as each bet's hit chance and treating games as independent. Parlays are left out because they lower the chance of a winning day.</span>
+    <span id="howBet" hidden>How this works: the goal is to be up $100 every week. Each day the page picks the set of single bets (2+ point edge, no NHL, no parlays) with the highest chance of a winning day, then sizes the stakes so that if they hit, that day earns an equal share of what is still needed for the week. The only ceilings are a real edge on every bet and what is left of the $500 weekly bankroll. Chances use My % as each bet's hit chance and treat games as independent, so they are only as good as those estimates. No plan makes a losing week impossible.</span>
+    <span id="howPlan">How this works: the page tries every combination of the day's qualifying single bets (2+ point edge, one bet per game, staked at the board's Kelly size, $75 cap) and works out the exact chance each combination ends the day with a profit, using My % as each bet's hit chance and treating games as independent. Parlays are left out because they lower the chance of a winning day.</span>
     <span>The chance shown is only as good as My %. If our estimates run a few points high, the real chance is lower. No plan makes a losing day impossible.</span>
     <button type="button" class="theme" id="theme">Switch light/dark</button>
   </footer>
@@ -297,7 +298,7 @@ table.out td.num, table.out th.num { text-align:right; }
     var mac = /\/Downloads\//.test(location.pathname) ? 'Daily%20Picks%20Board.html' : 'index.html';
     b.href = mac;
     b.addEventListener('click', function (e) { if (history.length > 1) { e.preventDefault(); history.back(); } }); })();
-  var UPDATED = '2026-11-17T21:35:00Z', CAP = 75, MAX_CANDIDATES = 14;
+  var UPDATED = '2026-11-17T21:48Z', CAP = 'plan' === 'bet' ? Infinity : 75, MAX_CANDIDATES = 14, PAGE = 'plan';
   var picks = JSON.parse(document.getElementById('picks-data').textContent);
   var $ = function (id) { return document.getElementById(id); };
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -317,15 +318,21 @@ table.out td.num, table.out th.num { text-align:right; }
   function oddsOf(r) { var o = Number(r.odds_now); if (!isFinite(o) || o === 0) o = Number(r.odds_at_pick); return o; }
   function winAmt(stake, o) { return stake * (o > 0 ? o / 100 : 100 / Math.abs(o)); }
 
+  // Quarter Kelly on the $500 bankroll, used only as the relative weight between bets before goal sizing.
+  function kellyBase(p, o) { var b = o > 0 ? o / 100 : 100 / Math.abs(o), f = (b * p - (1 - p)) / b; return Math.max(0, Math.round(0.25 * f * 500 * 100) / 100); }
   function candidates(day) {
     var list = picks.filter(function (r) {
-      if (r.day !== day || (r.tier !== 'best' && r.tier !== 'risky')) return false;
-      if (r.sport === 'Parlay' || (r.legs && String(r.legs).length)) return false;
-      var o = oddsOf(r); return isFinite(o) && o !== 0 && Number(r.my_pct) > 0 && Number(r.edge) >= 2 && Number(r.stake) > 0;
+      if (r.day !== day || r.sport === 'Parlay' || r.sport === 'NHL' || (r.legs && String(r.legs).length)) return false;
+      if (PAGE === 'bet') {
+        // Goal mode: any single bet with a real edge, whatever its board tier. Skips unverified injury news and stats that lean against.
+        if (['best', 'risky', 'likely'].indexOf(r.tier) < 0 || r.unverified) return false;
+        if (/lean: against/.test(String((r.stats || []).slice(-1)[0] || ''))) return false;
+      } else if (r.tier !== 'best' && r.tier !== 'risky') return false;
+      var o = oddsOf(r); return isFinite(o) && o !== 0 && Number(r.my_pct) > 0 && Number(r.edge) >= 2 && (PAGE === 'bet' || Number(r.stake) > 0);
     }).map(function (r) {
-      var o = oddsOf(r), p = Number(r.my_pct) / 100, s = Number(r.stake), w = winAmt(s, o);
+      var o = oddsOf(r), p = Number(r.my_pct) / 100, s = PAGE === 'bet' ? kellyBase(p, o) : Number(r.stake), w = winAmt(s, o);
       return { r: r, p: p, stake: s, win: w, odds: o, ev: p * w - (1 - p) * s, game: String(r.game || '').toLowerCase() };
-    }).filter(function (c) { return c.ev > 0; });
+    }).filter(function (c) { return c.ev > 0 && c.stake > 0; });
     list.sort(function (a, b) { return b.r.edge - a.r.edge; });
     return list.slice(0, MAX_CANDIDATES);
   }
@@ -377,11 +384,73 @@ table.out td.num, table.out th.num { text-align:right; }
   var days = Array.from(dset).sort();
   var di = days.indexOf(iso); if (di < 0) { di = days.findIndex(function (d) { return d > iso; }); if (di < 0) di = days.length - 1; }
   var mode = 'safe';
-  try { var sm = sessionStorage.getItem('planMode'); if (sm) mode = sm; } catch (e) {}
+  if (PAGE === 'bet') { $('tabs').hidden = true; $('howBet').hidden = false; $('howPlan').hidden = true; $('pageH1').textContent = 'What to bet today'; }
+  else { try { var sm = sessionStorage.getItem('planMode'); if (sm) mode = sm; } catch (e) {} }
 
   function dayName(d) { var x = new Date(d + 'T12:00:00'); return x.toLocaleDateString([], { weekday: 'long', month: 'short', day: 'numeric' }); }
   function timeOf(s) { try { return new Date(s).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); } catch (e) { return ''; } }
 
+
+  // Weekly goal: be up $100 each week (Mon to Sun, viewer's local dates). Brooks removed the per-bet and daily caps on 2026-11-17.
+  // Stakes are sized so that each remaining day, if its bets hit, earns an equal share of what is still needed.
+  // Ceilings: the $500 weekly bankroll (what is left of it) and a positive edge on every bet.
+  var GOAL = 100, BANK = 500;
+  function scaled(c, k) { var st = Math.ceil(c.stake * k * 100) / 100, w = winAmt(st, c.odds); return { r: c.r, p: c.p, stake: st, win: w, odds: c.odds, ev: c.p * w - (1 - c.p) * st, game: c.game }; }
+  function goalWeek() {
+    var t = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    var mon = new Date(t); mon.setDate(t.getDate() - ((t.getDay() + 6) % 7));
+    var sun = new Date(mon); sun.setDate(mon.getDate() + 6);
+    var G = { ws: key(mon), we: key(sun), wtd: 0, nW: 0, nL: 0, plans: {}, unscanned: 0 };
+    picks.forEach(function (r) {
+      if (!r.day || r.day < G.ws || r.day > G.we || r.sport === 'Parlay' || !(Number(r.stake) > 0)) return;
+      if (r.result === 'W') { G.wtd += Number(r.to_win) || winAmt(Number(r.stake), oddsOf(r)); G.nW++; }
+      else if (r.result === 'L') { G.wtd -= Number(r.stake); G.nL++; }
+    });
+    G.need = GOAL - G.wtd; G.left = Math.max(0, BANK + Math.min(0, G.wtd));
+    var raw = [];
+    for (var x = new Date(t); key(x) <= G.we; x.setDate(x.getDate() + 1)) {
+      var dk = key(x);
+      if (!picks.some(function (r) { return r.day === dk; })) { G.unscanned++; continue; }
+      var cs = candidates(dk).filter(function (c) { return c.r.result !== 'W' && c.r.result !== 'L'; });
+      if (cs.length) raw.push({ day: dk, plan: best(cs, 'safe') });
+    }
+    var target = G.need > 0 && raw.length ? G.need / raw.length : 0, total = 0;
+    raw.forEach(function (o) { o.k = target > 0 && o.plan.best > 0 ? target / o.plan.best : 1; total += o.plan.staked * o.k; });
+    G.capped = total > G.left + 0.01;
+    var shrink = G.capped ? G.left / total : 1;
+    var d = { 0: 1 }; G.ev = 0; G.maxUp = 0; G.staked = 0;
+    raw.forEach(function (o) {
+      var pl = score(o.plan.set.map(function (c) { return scaled(c, o.k * shrink); }));
+      G.plans[o.day] = pl; G.ev += pl.ev; G.maxUp += pl.best; G.staked += pl.staked;
+      var nd = {};
+      Object.keys(d).forEach(function (a) { Object.keys(pl.d).forEach(function (b) { var k2 = Number(a) + Number(b); nd[k2] = (nd[k2] || 0) + d[a] * pl.d[b]; }); });
+      d = nd;
+    });
+    G.pGoal = 0; G.pDown = 0; G.worst = 0;
+    Object.keys(d).forEach(function (k3) { var v = Number(k3) / 100; if (v >= G.need - 0.05) G.pGoal += d[k3]; if (G.wtd + v < -0.004) G.pDown += d[k3]; G.worst = Math.min(G.worst, v); });
+    G.days = raw.length;
+    return G;
+  }
+  var GW = PAGE === 'bet' ? goalWeek() : null;
+  function weekBox() {
+    var G = GW, need = G.need, verdict;
+    if (need <= 0) verdict = 'Goal reached for this week. Stakes go back to the normal Kelly size for the rest of the week.';
+    else if (!G.days) verdict = '<b>No qualifying bets are left this week, so the goal cannot be reached.</b>';
+    else if (G.capped && G.maxUp < need) verdict = '<b>The $' + GOAL + ' goal is out of reach this week.</b> Even staking the rest of the $' + BANK + ' bankroll, every bet hitting would only get you to ' + money(G.wtd + G.maxUp, true) + '.';
+    else verdict = 'Stakes are sized so you reach $' + GOAL + ' if every planned bet hits. The chance of that is <b>' + pct(G.pGoal) + '</b>. If one misses, you will usually finish the week down.';
+    var prog = Math.max(0, Math.min(100, G.wtd / GOAL * 100));
+    return '<section><div class="sec-h"><h2>This week\'s $' + GOAL + ' goal</h2><p>' + dayName(G.ws).replace(/^\w+, /, '') + ' to ' + dayName(G.we).replace(/^\w+, /, '') + '</p></div>'
+      + '<div class="hero glass">'
+      + '<div class="stat ' + (G.wtd < 0 ? 'neg' : 'main') + '"><b>' + money(G.wtd, true) + '</b><span>Up or down this week (' + G.nW + '–' + G.nL + ')</span></div>'
+      + '<div class="stat"><b>' + (need > 0 ? money(need) : '$0') + '</b><span>Still needed</span></div>'
+      + '<div class="stat main"><b>' + (need > 0 ? pct(G.pGoal) : '100%') + '</b><span>Chance to reach $' + GOAL + '</span></div>'
+      + '<div class="stat neg"><b>' + pct(G.pDown) + '</b><span>Chance the week ends down</span></div>'
+      + '<div class="stat"><b>' + money(G.staked) + '</b><span>Planned stakes left this week</span></div>'
+      + '<div class="stat neg"><b>' + money(G.wtd + G.worst, true) + '</b><span>Week result if every bet misses</span></div>'
+      + '</div>'
+      + '<div class="glass" style="padding:14px 18px"><div class="bar" aria-hidden="true"><i class="w" style="width:' + prog + '%"></i></div></div>'
+      + '<p class="blurb glass">' + verdict + ' These stakes are much bigger than the normal Kelly size, so losses come faster too. After a losing day the stakes for the remaining days go up to make up the gap, always within what is left of the $' + BANK + ' bankroll. The past week result counts the board\'s staked bets' + (G.unscanned ? '; ' + G.unscanned + ' day' + (G.unscanned > 1 ? 's' : '') + ' left this week ' + (G.unscanned > 1 ? 'are' : 'is') + ' not scanned yet' : '') + '.</p></section>';
+  }
   function render() {
     var day = days[di];
     $('dayLabel').textContent = day ? dayName(day) : '—';
@@ -389,10 +458,11 @@ table.out td.num, table.out th.num { text-align:right; }
     $('dayTag').textContent = diff === 0 ? 'Today' : diff === 1 ? 'Tomorrow · early lines' : diff > 1 ? 'In ' + diff + ' days · early lines' : 'Past day';
     $('prev').disabled = di <= 0; $('next').disabled = di >= days.length - 1;
     $('tabSafe').setAttribute('aria-selected', mode === 'safe'); $('tabEv').setAttribute('aria-selected', mode === 'ev');
-    var cands = candidates(day), body = $('planBody');
-    if (!picks.some(function (r) { return r.day === day; })) { body.innerHTML = '<div class="empty glass">Not scanned yet. The hourly refresh adds this day once lines are posted.</div>'; return; }
-    if (!cands.length) { body.innerHTML = '<div class="empty glass">No qualifying edge found for this day, so the best plan is to pass. Not betting is a winning day for your bankroll.</div>'; return; }
+    var cands = candidates(day), body = $('planBody'), wk = PAGE === 'bet' ? weekBox() : '';
+    if (!picks.some(function (r) { return r.day === day; })) { body.innerHTML = wk + '<div class="empty glass">Not scanned yet. The hourly refresh adds this day once lines are posted.</div>'; return; }
+    if (!cands.length) { body.innerHTML = wk + '<div class="empty glass">No qualifying edge found for this day, so the best plan is to pass. Not betting is a winning day for your bankroll.</div>'; return; }
     var plan = best(cands, mode), other = best(cands, mode === 'safe' ? 'ev' : 'safe');
+    if (PAGE === 'bet' && GW.plans[day]) plan = GW.plans[day];
     var settled = plan.set.every(function (c) { return c.r.result === 'W' || c.r.result === 'L'; });
     var actual = plan.set.reduce(function (s, c) { return s + (c.r.result === 'W' ? c.win : c.r.result === 'L' ? -c.stake : 0); }, 0);
 
@@ -401,13 +471,15 @@ table.out td.num, table.out th.num { text-align:right; }
       + '<div class="stat main"><b>' + pct(plan.pWin) + '</b><span>Chance you end the day up</span></div>'
       + '<div class="stat"><b>' + pct(plan.pLose) + '</b><span>Chance you end the day down</span></div>'
       + '<div class="stat"><b>' + money(plan.ev, true) + '</b><span>Expected profit</span></div>'
-      + '<div class="stat"><b>' + money(plan.staked) + '</b><span>Total staked of $' + CAP + '</span></div>'
+      + '<div class="stat"><b>' + money(plan.staked) + '</b><span>' + (CAP === Infinity ? 'Total staked' : 'Total staked of $' + CAP) + '</span></div>'
       + '<div class="stat"><b class="pos">' + money(plan.best, true) + '</b><span>If every bet hits</span></div>'
       + '<div class="stat neg"><b>' + money(plan.worst, true) + '</b><span>If every bet misses</span></div>'
       + (settled ? '<div class="stat ' + (actual < 0 ? 'neg' : 'main') + '"><b>' + money(actual, true) + '</b><span>How this plan actually did</span></div>' : '')
       + '</div>';
     h += '<div class="glass" style="padding:14px 18px"><div class="bar" aria-hidden="true"><i class="w" style="width:' + (plan.pWin * 100) + '%"></i><i class="e" style="width:' + (plan.pEven * 100) + '%"></i><i class="l" style="width:' + (plan.pLose * 100) + '%"></i></div></div>';
-    var cmp = mode === 'safe'
+    var cmp = PAGE === 'bet'
+      ? 'Bet exactly this for the <b>best chance to finish the day ahead</b> (' + pct(plan.pWin) + '). ' + (cands.length > plan.set.length ? 'Adding the other ' + (cands.length - plan.set.length) + ' qualifying bet' + (cands.length - plan.set.length > 1 ? 's' : '') + ' would lower that chance, so skip ' + (cands.length - plan.set.length > 1 ? 'them' : 'it') + ' today.' : 'Every bet that passed the win-rate rule today is in this plan.')
+      : mode === 'safe'
       ? 'This plan gives the <b>best chance of a winning day</b> (' + pct(plan.pWin) + '). Betting for the most expected profit instead would be ' + other.set.length + ' bet' + (other.set.length > 1 ? 's' : '') + ' with a ' + pct(other.pWin) + ' chance of a winning day and ' + money(other.ev, true) + ' expected.'
       : 'This plan has the <b>highest expected profit</b> (' + money(plan.ev, true) + '), with a ' + pct(plan.pWin) + ' chance of a winning day. The safest plan would be ' + other.set.length + ' bet' + (other.set.length > 1 ? 's' : '') + ' with a ' + pct(other.pWin) + ' chance and ' + money(other.ev, true) + ' expected.';
     h += '<p class="blurb glass">' + cmp + ' More bets usually means a smoother day but not always a likelier winning one, because one loss at -110 wipes out almost a full win.</p>';
@@ -422,7 +494,7 @@ table.out td.num, table.out th.num { text-align:right; }
         + '<span class="game">' + esc(r.game) + '</span>'
         + '<div class="meta"><div><b>' + money(c.stake) + '</b><span>Stake</span></div><div><b>' + money(c.win) + '</b><span>To win</span></div><div><b>' + Number(r.edge).toFixed(1) + '</b><span>Edge (pts)</span></div>'
         + '<div><b>' + Number(r.my_pct).toFixed(1) + '%</b><span>My %</span></div><div><b>' + Number(r.book_pct).toFixed(1) + '%</b><span>Book %</span></div><div><b>' + money(c.ev, true) + '</b><span>Expected</span></div></div>'
-        + (r.bet_rule ? '<span class="rule">Only bet if: ' + esc(String(r.bet_rule).replace(/^only (bet )?(if )?/i, '')) + '</span>' : '')
+        + (r.bet_rule ? '<span class="rule">Only bet if: ' + esc(String(r.bet_rule).replace(/^((Staked: win-rate rule|Watch only:[^.]*|Top \d of today by My %)\.\s*)+/i, '').replace(/^only (bet )?(if )?/i, '')) + '</span>' : '')
         + '</article>';
     });
     h += '</div></section>';
@@ -442,13 +514,13 @@ table.out td.num, table.out th.num { text-align:right; }
     }
     h += '</tbody></table></div></section>';
 
-    var left = cands.filter(function (c) { return plan.set.indexOf(c) < 0; });
+    var left = cands.filter(function (c) { return !plan.set.some(function (x) { return x.r === c.r; }); });
     if (left.length) {
       h += '<details class="passed glass"><summary>Qualifying bets left out of this plan (' + left.length + ')</summary><ul class="left-out">'
         + left.map(function (c) { return '<li>' + esc(c.r.sport) + ': ' + esc(c.r.pick) + ' ' + amer(c.odds) + ' · My ' + Number(c.r.my_pct).toFixed(1) + '% vs Book ' + Number(c.r.book_pct).toFixed(1) + '%</li>'; }).join('')
         + '</ul></details>';
     }
-    body.innerHTML = h;
+    body.innerHTML = PAGE === 'bet' ? h.replace(/(<section><div class="sec-h"><h2>How the day could go)/, function (m0) { return wk + m0; }) : h;
   }
 
   $('prev').onclick = function () { if (di > 0) { di--; render(); } };
