@@ -297,7 +297,7 @@ table.out td.num, table.out th.num { text-align:right; }
     var mac = /\/Downloads\//.test(location.pathname) ? 'Daily%20Picks%20Board.html' : 'index.html';
     b.href = mac;
     b.addEventListener('click', function (e) { if (history.length > 1) { e.preventDefault(); history.back(); } }); })();
-  var UPDATED = '2026-11-17T21:30Z', CAP = 75, MAX_CANDIDATES = 14;
+  var UPDATED = '2026-11-17T21:35:00Z', CAP = 75, MAX_CANDIDATES = 14;
   var picks = JSON.parse(document.getElementById('picks-data').textContent);
   var $ = function (id) { return document.getElementById(id); };
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
