@@ -5099,10 +5099,11 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "timing": "Bet now: early number. Check for injury news before tip.",
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Mississippi State 86, UCF 83 (169)."
  },
  {
   "id": "nfst-gt-u1505",
@@ -5124,7 +5125,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "The model projects well under 150.5. Combined pace is slightly below the national average.",
   "risk": "A 21.5-point spread. A blowout can bring garbage-time scoring either way.",
   "bet_rule": "Watch only: below the win-rate bar. Under 150.5 at -115 or better; pass if the number moves 1.5+ points against.",
@@ -5148,8 +5149,9 @@
    "Combined pace 70.5 vs league 70.7 (slower)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Georgia Tech 93, Norfolk State 79 (172)."
  },
  {
   "id": "leh-msm-u1375",
@@ -5171,7 +5173,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "The model projects these two in the low 130s. Both play slower than average.",
   "risk": "Small early-season samples for two low-major teams.",
   "bet_rule": "Watch only: below the win-rate bar. Under 137.5 at -125 or better; pass if the number moves 1.5+ points against.",
@@ -5195,8 +5197,9 @@
    "Combined pace 70.0 vs league 70.7 (slower)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Lehigh 99, Mount St. Mary's 65 (164)."
  },
  {
   "id": "tnst-usf-o1645",
@@ -5218,7 +5221,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Combined pace is 77.4, the fastest on the slate (the national average is 70.7). Both teams' games average above the line.",
   "risk": "Monday's college overs all lost. This is a high number to clear.",
   "bet_rule": "Watch only: below the win-rate bar. Over 164.5 at -120 or better; pass if the number moves 1.5+ points against.",
@@ -5242,8 +5245,9 @@
    "Combined pace 77.4 vs league 70.7 (faster)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: South Florida 98, Tennessee State 71 (169)."
  },
  {
   "id": "ill-duke-u1645",
@@ -5265,7 +5269,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Combined pace is 66.6, well below average. The model projects the total in the 150s.",
   "risk": "A ranked matchup with a sharp market. Two strong offenses.",
   "bet_rule": "Watch only: below the win-rate bar. Under 164.5 at -122 or better; pass if the number moves 1.5+ points against.",
@@ -5289,8 +5293,9 @@
    "Combined pace 66.6 vs league 70.7 (slower)",
    "Stats lean: supports (2 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Illinois 99, Duke 78 (177)."
  },
  {
   "id": "akr-buck-akr135",
@@ -5312,7 +5317,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Season margins say Akron by 21.3. The model has Akron covering 60% of the time.",
   "risk": "A 13.5-point road favorite. The early-season model is noisy on big spreads.",
   "bet_rule": "Watch only: below the win-rate bar. Akron -13.5 at -128 or better; pass if the number moves 1.5+ points against.",
@@ -5335,8 +5340,9 @@
    "Season margins say Akron Zips by +21.3; the pick needs better than +13.5",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Bucknell 53, Akron 49."
  },
  {
   "id": "char-dav-dav35",
@@ -5358,7 +5364,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "The model and season margins both have Davidson by about 6 at home. The moneyline (-170) agrees.",
   "risk": "A low total (132.5), so a few possessions decide it.",
   "bet_rule": "Watch only: below the win-rate bar. Davidson -3.5 at -125 or better; pass if the number moves 1.5+ points against.",
@@ -5381,8 +5387,9 @@
    "Season margins say Davidson Wildcats by +6.0; the pick needs better than +3.5",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Charlotte 73, Davidson 66."
  },
  {
   "id": "scan-2026-11-21-nba",
@@ -7845,7 +7852,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Model makes Davidson 72.5% to win.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
   "bet_rule": "Watch only: below the win-rate bar. Davidson ML at -185 or better.",
@@ -7869,8 +7876,9 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T14:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Charlotte 73, Davidson 66."
  },
  {
   "id": "tor-was-torml",
