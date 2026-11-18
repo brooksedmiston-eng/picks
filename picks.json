@@ -2725,7 +2725,7 @@
   "sport": "NBA",
   "game": "",
   "start": "2026-11-19",
-  "pick": "wait",
+  "pick": "scanned",
   "odds_at_pick": "",
   "odds_now": "",
   "move": "none",
@@ -2735,13 +2735,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "Lines not posted yet",
+  "why": "Moneylines posted for 4 games (no spreads/totals yet). Trail Blazers ML clears the win-rate bar. Warriors +163 and Timberwolves +113 show 3-4 point edges but are underdogs (riskier plays are paused).",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-13T16:44:38Z"
+  "updated": "2026-11-18T16:10:00Z"
  },
  {
   "id": "scan-2026-11-19-nba-props",
@@ -8015,6 +8015,52 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "updated": "2026-11-18T12:40:00Z",
+  "watch_top2": true
+ },
+ {
+  "id": "mil-por-porml",
+  "day": "2026-11-19",
+  "tier": "likely",
+  "confidence": "Medium",
+  "sport": "NBA",
+  "game": "Trail Blazers @ Bucks",
+  "start": "2026-11-19",
+  "pick": "Trail Blazers ML",
+  "odds_at_pick": -426,
+  "odds_now": -426,
+  "move": "none",
+  "my_pct": 81.6,
+  "book_pct": 79.4,
+  "edge": 2.2,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "why": "Team model gives Portland (9-3, 6-1 away) 85.6% to win at Milwaukee (1-12, 0-5 last 5, worst net rating in the league); the market has 79.4% (no-vig). Season stats all point the same way.",
+  "risk": "Heavy favorite: small profit for the stake. Thursday injury reports aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market).",
+  "bet_rule": "Trail Blazers ML at -440 or better.",
+  "basis": "lookup.py nba Bucks \"Trail Blazers\": P(home)=14.4%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 19 moneylines (spreads not posted yet).",
+  "timing": "Bet now: early number; recheck injuries Thursday.",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Bucks",
+   "away": "Trail Blazers",
+   "mkt": "ml",
+   "side": "away",
+   "line": 0
+  },
+  "stats": [
+   "Portland Trail Blazers 9-3 (away 6-1), last 5 3-2 (+3.0 margin)",
+   "Milwaukee Bucks 1-12 (home 1-6), last 5 0-5 (-17.0 margin)",
+   "Net rating: Milwaukee Bucks -10.1 (30th of 30), Portland Trail Blazers +6.4 (6th)",
+   "Scoring per game: Milwaukee Bucks 106.2 for / 120.2 against, Portland Trail Blazers 119.6 / 111.8",
+   "Off/Def rating: Milwaukee Bucks 104.4 / 118.3, Portland Trail Blazers 116.8 / 109.3; pace 101.7 vs 102.4",
+   "Season margins say Portland Trail Blazers by +8.9; the pick needs a win",
+   "Stats lean: supports (3 for, 0 against)"
+  ],
+  "updated": "2026-11-18T16:10:00Z",
   "watch_top2": true
  }
 ]
