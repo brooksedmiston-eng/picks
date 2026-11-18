@@ -7902,10 +7902,10 @@
   "pm_note": "not checked this run",
   "result": "",
   "why": "Team model gives Raptors 77.9% to win; the market has 67.0% (no-vig). Season stats all point the same way.",
-  "risk": "Injury reports for Wednesday aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market). My % is below the 75% win-rate bar.",
+  "risk": "Injuries (CBS, Nov 18): Raptors without Kawhi Leonard and Nick Bittle, McCullar Jr. game-time decision; Wizards without Vukcevic, Beekman, Champagnie and Watkins, Okpara game-time decision. These are long absences already in recent form, and the model is weighted only 35%. Thin edge at this price.",
   "bet_rule": "Staked: win-rate rule. Raptors ML at -250 or better (a smaller edge than when first listed).",
   "basis": "lookup.py nba Raptors Wizards: P(home)=77.9%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 18 moneylines (spreads not posted yet). Re-priced Nov 18 12:40 UTC: ML -249/205 (ScoresAndOdds), no-vig 68.5%.",
-  "timing": "Wait: check injury report and lineups Wednesday.",
+  "timing": "Bet now: injury report checked; price -249 holds.",
   "live": {
    "lg": "basketball/nba",
    "home": "Raptors",
@@ -7923,7 +7923,7 @@
    "Season margins say Toronto Raptors by +5.6; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-18T12:40:00Z",
+  "updated": "2026-11-18T15:40:00Z",
   "watch_top2": true
  },
  {
