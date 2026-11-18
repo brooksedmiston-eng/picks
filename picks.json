@@ -4937,7 +4937,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Model has the Lakers (12-2, 5-0 last 5) by 14.8 at home against Charlotte (4-9, 1-4 last 5, -15.0 margin). Both teams are missing a key player: Reaves (LAL) and Knueppel (CHA) are Out, plus Kessler (LAL) and Schroder (CHA).",
   "risk": "The team model can't see the injuries, so I weighted it only 35% (65% market). Reaves out takes away the Lakers' second scorer. Late tip (10 PM CT).",
   "bet_rule": "Watch only: below the win-rate bar. Lakers -8.5 at -110 or better, or -8 at any price to -115. Pass at -9.5 or worse.",
@@ -4960,8 +4960,9 @@
    "Season margins say Los Angeles Lakers by +11.5; the pick needs better than +8.5",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T12:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Lakers 118, Hornets 114 (OT); won by 4, needed 9."
  },
  {
   "id": "spu-uml-uml65",
@@ -5004,10 +5005,11 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "timing": "Bet now: early number. Check for injury news before tip.",
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T12:10:00Z",
+  "watch_top2": true,
+  "final": "Final: UMass Lowell 66, Saint Peter's 51; won by 15."
  },
  {
   "id": "bgsu-wm-bg25",
@@ -7283,7 +7285,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Model makes the Lakers 86% to win (12-2, 5-0 last 5) against Charlotte (1-4 last 5). Model weighted 35% because Reaves and Kessler (LAL) and Knueppel and Schroder (CHA) are out. Heavy favorite: $7.87 wins $2.43.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
   "bet_rule": "Staked: win-rate rule. Lakers ML at -339 or better.",
@@ -7307,8 +7309,9 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T12:10:00Z",
+  "watch_top2": true,
+  "final": "Final: Lakers 118, Hornets 114 (OT)."
  },
  {
   "id": "spu-uml-umlml",
@@ -7330,7 +7333,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Model makes Lowell 90% to win at home against winless Saint Peter's (0-4, 47.5 points a game). Heavy favorite: $10.00 wins $2.99.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
   "bet_rule": "Staked: win-rate rule. UMass Lowell ML at -350 or better.",
@@ -7354,8 +7357,9 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-17T22:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-18T12:10:00Z",
+  "watch_top2": true,
+  "final": "Final: UMass Lowell 66, Saint Peter's 51."
  },
  {
   "id": "ball-ohio-ohioml",
