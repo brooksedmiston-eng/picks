@@ -2785,13 +2785,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "29 games posted. Toledo ML (-345) clears the win-rate bar and is staked. Oregon, Houston Christian, Jacksonville and NC State show edges but are below 75% (riskier plays paused).",
+  "why": "29 games posted. Toledo ML was staked, then dropped: it is a neutral-site game, and without home court the edge is 0.5. Oregon, Houston Christian, Jacksonville and NC State show edges but are below 75% (riskier plays paused).",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-19T14:15:00Z"
+  "updated": "2026-11-19T17:10:00Z"
  },
  {
   "id": "scan-2026-11-19-ncaaf",
@@ -8068,7 +8068,7 @@
  {
   "id": "rmu-tol-tolml",
   "day": "2026-11-19",
-  "tier": "best",
+  "tier": "pass",
   "confidence": "Medium",
   "sport": "NCAAB",
   "game": "Robert Morris @ Toledo",
@@ -8077,20 +8077,20 @@
   "odds_at_pick": -345,
   "odds_now": -345,
   "move": "none",
-  "my_pct": 77.8,
+  "my_pct": 74.9,
   "book_pct": 74.4,
-  "edge": 3.4,
-  "stake": 1.75,
-  "to_win": 0.51,
+  "edge": 0.5,
+  "stake": 0,
+  "to_win": 0,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
   "result": "",
-  "why": "Team model gives Toledo 84.2% at home vs Robert Morris (net rating 129th vs 267th); market no-vig 74.4%. Clears the win-rate bar (My 77.8, edge 3.4). Small Kelly stake.",
+  "why": "Dropped: neutral-site game (Baha Mar semifinal in the Bahamas), not a Toledo home game. Without home court the model has Toledo 75.9%, so my number is 74.9% vs 74.4% no-vig (edge 0.5).",
   "risk": "Early-season college numbers on 4-5 games; no injury report readable for either team. Toledo is 2-3.",
-  "bet_rule": "Staked: win-rate rule. Toledo ML at -360 or better.",
-  "basis": "lookup.py ncaab Toledo \"Robert Morris\": P(home)=84.2%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 19 (Toledo -7.5, total 144.5).",
-  "timing": "Bet now: price is inside the limit.",
+  "bet_rule": "Dropped: no edge at a neutral site.",
+  "basis": "lookup.py ncaab Toledo \"Robert Morris\" --neutral: P=75.9%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 19.",
+  "timing": "",
   "live": {
    "lg": "basketball/mens-college-basketball",
    "home": "Toledo",
@@ -8108,7 +8108,11 @@
    "Season margins say Toledo Rockets by +4.2; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-19T14:15:00Z"
+  "updated": "2026-11-19T17:10:00Z",
+  "dropped": true,
+  "dropped_from": "best",
+  "was_edge": 3.4,
+  "dropped_at": "2026-11-19T17:10:00Z"
  },
  {
   "id": "nop-okc-okcml",
