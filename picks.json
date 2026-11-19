@@ -2735,13 +2735,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "Moneylines posted for 4 games (no spreads/totals yet). Trail Blazers ML clears the win-rate bar. Warriors +163 and Timberwolves +113 show 3-4 point edges but are underdogs (riskier plays are paused).",
+  "why": "Moneylines posted for 4 games (no spreads/totals yet). Trail Blazers ML moved to -456, past its -440 limit, so no staked NBA bet Thursday. Warriors +156 and Timberwolves +113 are underdogs (riskier plays are paused).",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-18T16:10:00Z"
+  "updated": "2026-11-19T02:05:00Z"
  },
  {
   "id": "scan-2026-11-19-nba-props",
@@ -8023,29 +8023,29 @@
  {
   "id": "mil-por-porml",
   "day": "2026-11-19",
-  "tier": "best",
+  "tier": "likely",
   "confidence": "Medium",
   "sport": "NBA",
   "game": "Trail Blazers @ Bucks",
   "start": "2026-11-19",
   "pick": "Trail Blazers ML",
   "odds_at_pick": -426,
-  "odds_now": -426,
-  "move": "none",
-  "my_pct": 81.6,
-  "book_pct": 79.4,
-  "edge": 2.2,
-  "stake": 4.02,
-  "to_win": 0.94,
+  "odds_now": -456,
+  "move": "against",
+  "my_pct": 82.7,
+  "book_pct": 81.2,
+  "edge": 1.5,
+  "stake": 0,
+  "to_win": 0,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
   "result": "",
-  "why": "Team model gives Portland (9-3, 6-1 away) 85.6% to win at Milwaukee (1-12, 0-5 last 5, worst net rating in the league); the market has 79.4% (no-vig). Season stats all point the same way. Heavy favorite: $4.02 wins $0.94.",
+  "why": "Price too short now: Portland moved from -426 to -456, past the -440 limit, and the edge fell to 1.5 points (my 82.7% vs 81.2% no-vig). Team model gives Portland (9-3, 6-1 away) 85.6% to win at Milwaukee (1-12, 0-5 last 5, worst net rating in the league); the market has 79.4% (no-vig). Season stats all point the same way. Heavy favorite: $4.02 wins $0.94.",
   "risk": "Heavy favorite: small profit for the stake. Thursday injury reports aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market).",
-  "bet_rule": "Staked: win-rate rule. Trail Blazers ML at -440 or better.",
+  "bet_rule": "Not staked: price moved past the -440 limit. Trail Blazers ML at -440 or better.",
   "basis": "lookup.py nba Bucks \"Trail Blazers\": P(home)=14.4%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 19 moneylines (spreads not posted yet).",
-  "timing": "Bet now: early number; recheck injuries Thursday.",
+  "timing": "Wait: only bet if it comes back to -440 or better; recheck injuries Thursday.",
   "live": {
    "lg": "basketball/nba",
    "home": "Bucks",
@@ -8063,7 +8063,6 @@
    "Season margins say Portland Trail Blazers by +8.9; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-18T16:10:00Z",
-  "watch_top2": true
+  "updated": "2026-11-19T02:05:00Z"
  }
 ]
