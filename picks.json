@@ -5052,9 +5052,9 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "timing": "Bet now: early number. Check for injury news before tip.",
-  "updated": "2026-11-17T22:10:00Z",
+  "updated": "2026-11-19T12:05:00Z",
   "watch_top2": true
  },
  {
@@ -7994,7 +7994,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Team model gives Pistons 77.8% to win; the market has 69.9% (no-vig). Season stats all point the same way. Heavy favorite: $3.17 wins $1.23.",
   "risk": "Injury reports for Wednesday aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market). My % is below the 75% win-rate bar.",
   "bet_rule": "Watch only: price too short for a positive stake. Pistons ML at -270 or better.",
@@ -8017,7 +8017,7 @@
    "Season margins say Detroit Pistons by +5.2; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-18T16:10:00Z",
+  "updated": "2026-11-19T12:05:00Z",
   "watch_top2": true
  },
  {
@@ -8030,22 +8030,22 @@
   "start": "2026-11-19",
   "pick": "Trail Blazers ML",
   "odds_at_pick": -426,
-  "odds_now": -456,
-  "move": "against",
-  "my_pct": 82.7,
-  "book_pct": 81.2,
-  "edge": 1.5,
+  "odds_now": -420,
+  "move": "favor",
+  "my_pct": 80.4,
+  "book_pct": 77.6,
+  "edge": 2.8,
   "stake": 0,
   "to_win": 0,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
   "result": "",
-  "why": "Price too short now: Portland moved from -426 to -456, past the -440 limit, and the edge fell to 1.5 points (my 82.7% vs 81.2% no-vig). Team model gives Portland (9-3, 6-1 away) 85.6% to win at Milwaukee (1-12, 0-5 last 5, worst net rating in the league); the market has 79.4% (no-vig). Season stats all point the same way. Heavy favorite: $4.02 wins $0.94.",
+  "why": "Price back to -420 (Bucks +329, a wide market), but too short for a positive stake: my 80.4% vs 80.8% needed. Team model gives Portland 85.6% at Milwaukee (1-12, worst net rating); market no-vig 77.6%.",
   "risk": "Heavy favorite: small profit for the stake. Thursday injury reports aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market).",
-  "bet_rule": "Not staked: price moved past the -440 limit. Trail Blazers ML at -440 or better.",
+  "bet_rule": "Not staked: at -420 the price needs 80.8% and my number is 80.4%, so no positive stake. Trail Blazers ML at -400 or better.",
   "basis": "lookup.py nba Bucks \"Trail Blazers\": P(home)=14.4%. Blended 0.35 model / 0.65 no-vig. ScoresAndOdds Nov 19 moneylines (spreads not posted yet).",
-  "timing": "Wait: only bet if it comes back to -440 or better; recheck injuries Thursday.",
+  "timing": "Wait: needs -400 or better; recheck injuries Thursday.",
   "live": {
    "lg": "basketball/nba",
    "home": "Bucks",
@@ -8063,6 +8063,6 @@
    "Season margins say Portland Trail Blazers by +8.9; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-19T02:05:00Z"
+  "updated": "2026-11-19T12:05:00Z"
  }
 ]
