@@ -8040,7 +8040,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Price back to -420 (Bucks +329, a wide market), but too short for a positive stake: my 80.4% vs 80.8% needed. Team model gives Portland 85.6% at Milwaukee (1-12, worst net rating); market no-vig 77.6%.",
   "risk": "Deni Avdija and Toumani Camara are game-time decisions (CBS, Nov 19); Morant and Sharpe out. Heavy favorite: small profit for the stake. Thursday injury reports aren't out yet, and the model can't see injuries, so it's weighted 35% (65% market).",
   "bet_rule": "Not staked: at -420 the price needs 80.8% and my number is 80.4%, so no positive stake. Trail Blazers ML at -400 or better.",
@@ -8063,7 +8063,7 @@
    "Season margins say Portland Trail Blazers by +8.9; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-19T12:05:00Z"
+  "updated": "2026-11-20T12:10:00Z"
  },
  {
   "id": "rmu-tol-tolml",
@@ -8124,22 +8124,22 @@
   "start": "2026-11-20",
   "pick": "Thunder ML",
   "odds_at_pick": -525,
-  "odds_now": -525,
-  "move": "none",
-  "my_pct": 85.8,
-  "book_pct": 83.2,
-  "edge": 2.6,
+  "odds_now": -546,
+  "move": "against",
+  "my_pct": 84.5,
+  "book_pct": 81.2,
+  "edge": 3.3,
   "stake": 0,
   "to_win": 0,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
   "result": "",
-  "why": "Numbers clear the bar (my 85.8% vs 83.2% no-vig), but OKC is missing Holmgren, Jalen Williams, Wallace and Caruso, which the team model can't see, so the edge is probably not real. Watch only until Friday's injury report.",
+  "why": "Edge on paper (my 84.5% vs 81.2% no-vig), but at -546 the price needs 84.5% to break even, so Kelly stake is zero. OKC has been without Holmgren, Jalen Williams and Wallace most of the season (already in its numbers); Caruso is a game-time decision. Pelicans list Murray, Mathurin, Watford, McGowens out and Murphy questionable.",
   "risk": "Model overstates OKC with four rotation players out. Pelicans list Murray and Murphy out until at least Nov 20.",
-  "bet_rule": "Watch only: injuries the model can't see. Recheck Friday.",
+  "bet_rule": "Watch only: no positive stake at -546. Thunder ML at -500 or better.",
   "basis": "lookup.py nba Thunder Pelicans: P(home)=90.6%. Blended 0.35 model / 0.65 no-vig. CBS injuries Nov 19.",
-  "timing": "Wait: Friday injury report",
+  "timing": "Wait: needs -500 or better.",
   "live": {
    "lg": "basketball/nba",
    "home": "Thunder",
@@ -8157,6 +8157,6 @@
    "Season margins say Oklahoma City Thunder by +8.4; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-19T14:15:00Z"
+  "updated": "2026-11-20T12:10:00Z"
  }
 ]
