@@ -3837,13 +3837,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "Moneylines posted for 9 games. Thunder ML clears on numbers but OKC is missing four rotation players the model can't see, so it is watch only. Hawks +3.2 edge at 67.9% is below the 75% bar.",
+  "why": "All 9 games rescanned at 9 am. Nothing clears the win-rate rule. Thunder -546 still watch-only (needs -500). Nets +181 and Rockets +101 show edges of 3-4 points but My % is under 60.",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-19T14:15:00Z"
+  "updated": "2026-11-20T15:20:00Z"
  },
  {
   "id": "scan-2026-11-20-nba-props",
@@ -3887,13 +3887,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "Lines not posted yet",
+  "why": "Friday slate scanned (12 games read in full; 26 more only from a partial page read, not modeled). Pick: South Dakota State ML -290 (neutral site). Watch: Utah ML -115 at Dayton (model 88%, book 51%; gap too big to trust this early) and Oklahoma State -108 (model 74%, My % 58). Tournament games were run as neutral site.",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-13T16:44:38Z"
+  "updated": "2026-11-20T15:20:00Z"
  },
  {
   "id": "scan-2026-11-20-ncaaf",
@@ -7516,8 +7516,8 @@
   "start": "2026-11-21T11:00:00-06:00",
   "pick": "North Texas ML",
   "odds_at_pick": -250,
-  "odds_now": -250,
-  "move": "none",
+  "odds_now": -238,
+  "move": "favor",
   "my_pct": 72.1,
   "book_pct": 68.5,
   "edge": 3.5,
@@ -7549,7 +7549,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-18T16:10:00Z",
+  "updated": "2026-11-20T15:20:00Z",
   "watch_top2": true
  },
  {
@@ -8157,6 +8157,52 @@
    "Season margins say Oklahoma City Thunder by +8.4; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-20T12:10:00Z"
+  "updated": "2026-11-20T15:20:00Z"
+ },
+ {
+  "id": "sdst-idst-sdstml",
+  "day": "2026-11-20",
+  "tier": "best",
+  "confidence": "Medium",
+  "sport": "NCAAB",
+  "game": "South Dakota State vs Idaho State (Queen City Classic)",
+  "start": null,
+  "pick": "South Dakota State ML",
+  "odds_at_pick": -290,
+  "odds_now": -290,
+  "move": "none",
+  "my_pct": 75.4,
+  "book_pct": 71.4,
+  "edge": 4.0,
+  "stake": 4.88,
+  "to_win": 1.68,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "why": "Model makes South Dakota State 83% on a neutral floor (Queen City Classic); they're 4-0 and Idaho State is 0-4 losing by 20 a game. Heavy favorite: $4.88 wins $1.68.",
+  "risk": "Heavy favorite: small payout, and early-season college numbers are noisy.",
+  "bet_rule": "Staked: win-rate rule. South Dakota State ML at -320 or better.",
+  "basis": "lookup.py ncaab Idaho State South Dakota State --neutral: P(SDSU)=82.8%. Blend 0.35 model / 0.65 no-vig. ScoresAndOdds moneylines. Tip time not shown on the odds page. College injury news not available.",
+  "timing": "Bet now: price inside limit",
+  "live": {
+   "lg": "basketball/mens-college-basketball",
+   "home": "Idaho State",
+   "away": "South Dakota State",
+   "mkt": "ml",
+   "side": "away",
+   "line": 0
+  },
+  "stats": [
+   "South Dakota State Jackrabbits 4-0 (away 2-0), last 5 4-0 (+15.2 margin)",
+   "Idaho State Bengals 0-4 (home 0-0), last 5 0-4 (-20.2 margin)",
+   "Net rating: Idaho State Bengals -8.7 (315th of 368), South Dakota State Jackrabbits +2.4 (135th)",
+   "Scoring per game: Idaho State Bengals 68.0 for / 88.2 against, South Dakota State Jackrabbits 72.8 / 57.5",
+   "Off/Def rating: Idaho State Bengals 95.8 / 124.3, South Dakota State Jackrabbits 108.4 / 85.7; pace 71.0 vs 67.1",
+   "Season margins say South Dakota State Jackrabbits by +15.8; the pick needs a win",
+   "Stats lean: supports (3 for, 0 against)"
+  ],
+  "unverified": false,
+  "updated": "2026-11-20T15:20:00Z"
  }
 ]
