@@ -8169,20 +8169,20 @@
   "start": null,
   "pick": "South Dakota State ML",
   "odds_at_pick": -290,
-  "odds_now": -290,
-  "move": "none",
-  "my_pct": 75.4,
-  "book_pct": 71.4,
-  "edge": 4.0,
-  "stake": 4.88,
-  "to_win": 1.68,
+  "odds_now": -245,
+  "move": "favor",
+  "my_pct": 73.2,
+  "book_pct": 68.1,
+  "edge": 5.2,
+  "stake": 9.49,
+  "to_win": 3.87,
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
   "result": "",
-  "why": "Model makes South Dakota State 83% on a neutral floor (Queen City Classic); they're 4-0 and Idaho State is 0-4 losing by 20 a game. Heavy favorite: $4.88 wins $1.68.",
+  "why": "Model makes South Dakota State 83% on a neutral floor (Queen City Classic); they're 5-0 and Idaho State is 0-4 losing by 20 a game. The line dropped from -290 to -245 (spread -6.5 to -5.5), which helps us: $9.49 wins $3.87.",
   "risk": "Heavy favorite: small payout, and early-season college numbers are noisy.",
-  "bet_rule": "Staked: win-rate rule. South Dakota State ML at -320 or better.",
+  "bet_rule": "Staked: top My % of the day with positive Kelly (My % 73.2 at -245 is just under the 75 bar). South Dakota State ML at -320 or better.",
   "basis": "lookup.py ncaab Idaho State South Dakota State --neutral: P(SDSU)=82.8%. Blend 0.35 model / 0.65 no-vig. ScoresAndOdds moneylines. Tip time not shown on the odds page. College injury news not available.",
   "timing": "Bet now: price inside limit",
   "live": {
@@ -8203,6 +8203,6 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-20T15:20:00Z"
+  "updated": "2026-11-20T19:10:00Z"
  }
 ]
