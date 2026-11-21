@@ -8180,7 +8180,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Model makes South Dakota State 83% on a neutral floor (Queen City Classic); they're 5-0 and Idaho State is 0-4 losing by 20 a game. The line dropped from -290 to -245 (spread -6.5 to -5.5), which helps us: $9.49 wins $3.87.",
   "risk": "Heavy favorite: small payout, and early-season college numbers are noisy.",
   "bet_rule": "Staked: top My % of the day with positive Kelly (My % 73.2 at -245 is just under the 75 bar). South Dakota State ML at -320 or better.",
@@ -8204,6 +8204,7 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-20T19:10:00Z"
+  "updated": "2026-11-21T20:40:00Z",
+  "final": "Idaho State 86, South Dakota State 71"
  }
 ]
