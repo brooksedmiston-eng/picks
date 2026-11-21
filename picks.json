@@ -8134,7 +8134,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Edge on paper (my 84.5% vs 81.2% no-vig), but at -546 the price needs 84.5% to break even, so Kelly stake is zero. OKC has been without Holmgren, Jalen Williams and Wallace most of the season (already in its numbers); Caruso is a game-time decision. Pelicans list Murray, Mathurin, Watford, McGowens out and Murphy questionable.",
   "risk": "Model overstates OKC with four rotation players out. Pelicans list Murray and Murphy out until at least Nov 20.",
   "bet_rule": "Watch only: no positive stake at -546. Thunder ML at -500 or better.",
@@ -8157,7 +8157,8 @@
    "Season margins say Oklahoma City Thunder by +8.4; the pick needs a win",
    "Stats lean: supports (3 for, 0 against)"
   ],
-  "updated": "2026-11-20T15:20:00Z"
+  "updated": "2026-11-21T17:10:00Z",
+  "final": "Thunder 126, Pelicans 120"
  },
  {
   "id": "sdst-idst-sdstml",
