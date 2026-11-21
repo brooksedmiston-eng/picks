@@ -7108,7 +7108,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Model projects 62.3. These teams' games average 61.0.",
   "risk": "Weather not checked yet (outdoor).",
   "bet_rule": "Watch only: below the win-rate bar. Over 56.5 at -120 or better.",
@@ -7132,7 +7132,8 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-18T16:10:00Z"
+  "updated": "2026-11-21T23:35:00Z",
+  "final": "Tulane 28, North Texas 24"
  },
  {
   "id": "hou-wvu-u705",
@@ -7526,7 +7527,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Model makes North Texas 79% to win; it has them by 11.9. Heavy favorite: $2.94 wins $1.18.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
   "bet_rule": "Staked: win-rate rule. North Texas ML at -265 or better.",
@@ -7549,8 +7550,9 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-20T15:20:00Z",
-  "watch_top2": true
+  "updated": "2026-11-21T23:35:00Z",
+  "watch_top2": true,
+  "final": "Tulane 28, North Texas 24"
  },
  {
   "id": "nw-minn-nwml",
