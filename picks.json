@@ -6505,7 +6505,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "W",
   "why": "Model projects 44.0 points. These teams' games average 45.1.",
   "risk": "Jacksonville scores 29.9 a game. Injury reports couldn't be read.",
   "bet_rule": "Watch only: below the win-rate bar. Under 46.5 at -120 or better.",
@@ -6530,7 +6530,8 @@
   ],
   "watch_top2": true,
   "unverified": false,
-  "updated": "2026-11-18T16:10:00Z"
+  "updated": "2026-11-23T01:05:00Z",
+  "final": "Giants 23, Jaguars 18"
  },
  {
   "id": "ari-kc-o415",
@@ -7666,7 +7667,7 @@
   "kalshi_pct": null,
   "poly_pct": null,
   "pm_note": "not checked this run",
-  "result": "",
+  "result": "L",
   "why": "Model makes the Jaguars 77% to win. Price is back to -266 (was -253 last night), edge 3.6. $3.29 wins $1.24. No key injury news found.",
   "risk": "Heavy favorite: small payout, and one upset wipes out several wins.",
   "bet_rule": "Staked: win-rate rule. Jaguars ML at -280 or better.",
@@ -7690,8 +7691,9 @@
    "Stats lean: supports (3 for, 0 against)"
   ],
   "unverified": false,
-  "updated": "2026-11-22T15:40:00Z",
-  "watch_top2": true
+  "updated": "2026-11-23T01:05:00Z",
+  "watch_top2": true,
+  "final": "Giants 23, Jaguars 18"
  },
  {
   "id": "mia-buf-bufml",
