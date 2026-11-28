@@ -8242,7 +8242,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "legs": "",
-  "updated": "2026-11-28T06:15:00Z",
+  "updated": "2026-11-28T12:15:00Z",
   "watch_top2": true,
   "unverified": false,
   "odds_now": -440,
@@ -8262,7 +8262,7 @@
   "why": "Model has Ohio State by 18 (88.6% to win) against a 12.5-point line. Blended with the book (0.35 model / 0.65 book for college), 81.8% vs the book's 78.2%. Ohio State is 5-1 at home; Michigan is 1-2 on the road and scores 18.3 a game. Heavy favorite: $2.15 wins $0.49.",
   "risk": "Rivalry game and Ohio State has lost 3 of its last 5. Heavy favorite: small payout.",
   "bet_rule": "Staked: win-rate rule. Ohio State ML at -500 or better. Check the price at your book first.",
-  "basis": "lookup.py ncaaf: P(Ohio State wins)=88.6%, projected 29.9-11.8. ESPN/DraftKings line from a partial page read: confirm the price before betting.",
+  "basis": "lookup.py ncaaf: P(Ohio State wins)=88.6%, projected 29.9-11.8. ESPN/DraftKings line from a partial page read: confirm the price before betting. VegasInsider consensus has Ohio State -10 (moneyline possibly -535, not confirmed); at -535 or shorter the stake turns negative, so the -500 limit matters.",
   "timing": "Bet now: kickoff 11 AM Central Saturday",
   "live": {
    "lg": "football/college-football",
@@ -8289,7 +8289,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "legs": "",
-  "updated": "2026-11-28T06:15:00Z",
+  "updated": "2026-11-28T12:15:00Z",
   "watch_top2": true,
   "unverified": false,
   "odds_now": -118,
@@ -8336,7 +8336,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "legs": "",
-  "updated": "2026-11-28T06:15:00Z",
+  "updated": "2026-11-28T12:15:00Z",
   "watch_top2": true,
   "unverified": true,
   "odds_now": -135,
@@ -8383,7 +8383,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "legs": "",
-  "updated": "2026-11-28T06:15:00Z",
+  "updated": "2026-11-28T12:15:00Z",
   "watch_top2": true,
   "unverified": true,
   "odds_now": 136,
@@ -8430,7 +8430,7 @@
   "pm_note": "not checked this run",
   "result": "",
   "legs": "",
-  "updated": "2026-11-28T06:15:00Z",
+  "updated": "2026-11-28T12:15:00Z",
   "watch_top2": true,
   "unverified": false,
   "odds_now": -111,
@@ -8762,13 +8762,13 @@
   "stake": 0,
   "to_win": 0,
   "confidence": "",
-  "why": "Lines not loaded this run (odds feed was partial); next refresh will retry",
+  "why": "5 games priced from ScoresAndOdds",
   "risk": "",
   "bet_rule": "",
   "legs": "",
   "basis": "",
   "result": "",
-  "updated": "2026-11-28T05:40:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "scan-2026-11-28-ncaab",
@@ -10541,7 +10541,7 @@
   ],
   "unverified": false,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "ten-jax-jaxml",
@@ -10589,7 +10589,7 @@
   ],
   "unverified": false,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "ne-lac-neml",
@@ -10637,7 +10637,7 @@
   ],
   "unverified": false,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "lv-cle-over",
@@ -10685,7 +10685,7 @@
   ],
   "unverified": true,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "was-ari-over",
@@ -10733,7 +10733,7 @@
   ],
   "unverified": false,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "sea-sf-over",
@@ -10781,7 +10781,7 @@
   ],
   "unverified": false,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "atl-min-under",
@@ -10829,7 +10829,7 @@
   ],
   "unverified": false,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
  },
  {
   "id": "nyj-mia-miaplus",
@@ -10877,6 +10877,201 @@
   ],
   "unverified": true,
   "watch_top2": true,
-  "updated": "2026-11-28T06:15:00Z"
+  "updated": "2026-11-28T12:15:00Z"
+ },
+ {
+  "id": "orl-was-wasplus",
+  "day": "2026-11-28",
+  "tier": "likely",
+  "confidence": "Medium",
+  "sport": "NBA",
+  "game": "Magic @ Wizards",
+  "start": "2026-11-28T16:00:00-06:00",
+  "pick": "Wizards +3.5",
+  "odds_at_pick": -110,
+  "odds_now": -110,
+  "move": "none",
+  "my_pct": 54.3,
+  "book_pct": 50.0,
+  "edge": 4.3,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "legs": "",
+  "why": "Model projects a near coin flip (Magic by 0.7).",
+  "risk": "Injury news not checked yet.",
+  "bet_rule": "Watch only: below the win-rate bar. Wizards +3.5 at -115 or better; not below +2.5.",
+  "basis": "lookup.py nba Wizards Magic: model 58.6%. Blend 0.5/0.5. ScoresAndOdds line (read directly).",
+  "timing": "Wait: check the 5 PM Central injury report",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Wizards",
+   "away": "Magic",
+   "mkt": "spread",
+   "side": "home",
+   "line": 3.5
+  },
+  "stats": [
+   "Orlando Magic 7-10 (away 6-4), last 5 2-3 (-6.2 margin)",
+   "Washington Wizards 7-12 (home 3-6), last 5 3-2 (-0.6 margin)",
+   "Net rating: Washington Wizards -6.1 (25th of 30), Orlando Magic -3.7 (21st)",
+   "Scoring per game: Washington Wizards 110.6 for / 116.2 against, Orlando Magic 107.4 / 112.3",
+   "Off/Def rating: Washington Wizards 108.4 / 113.8, Orlando Magic 107.4 / 112.3; pace 102.1 vs 100.0",
+   "Season margins say Washington Wizards by +1.7; the pick needs better than -3.5",
+   "Stats lean: mixed (2 for, 1 against)"
+  ],
+  "unverified": false,
+  "watch_top2": true,
+  "updated": "2026-11-28T12:15:00Z"
+ },
+ {
+  "id": "ind-chi-over",
+  "day": "2026-11-28",
+  "tier": "likely",
+  "confidence": "Medium",
+  "sport": "NBA",
+  "game": "Pacers @ Bulls",
+  "start": "2026-11-28T19:00:00-06:00",
+  "pick": "Over 234.5",
+  "odds_at_pick": -110,
+  "odds_now": -110,
+  "move": "none",
+  "my_pct": 56.4,
+  "book_pct": 50.0,
+  "edge": 6.3,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "legs": "",
+  "why": "Model projects 240 points.",
+  "risk": "High total already; a slow start sinks it.",
+  "bet_rule": "Watch only: below the win-rate bar. Over 234.5 at -115 or better; not above 236.5.",
+  "basis": "lookup.py nba Bulls Pacers: model 62.7%. Blend 0.5/0.5. ScoresAndOdds line (read directly).",
+  "timing": "Wait: check the 5 PM Central injury report",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Bulls",
+   "away": "Pacers",
+   "mkt": "total",
+   "side": "over",
+   "line": 234.5
+  },
+  "stats": [
+   "Indiana Pacers 6-12 (away 3-6), last 5 1-4 (-6.6 margin)",
+   "Chicago Bulls 6-12 (home 2-6), last 5 3-2 (+7.2 margin)",
+   "Net rating: Chicago Bulls -3.7 (22nd of 30), Indiana Pacers -3.2 (20th)",
+   "Scoring per game: Chicago Bulls 116.4 for / 122.6 against, Indiana Pacers 112.4 / 115.7",
+   "Off/Def rating: Chicago Bulls 109.9 / 115.8, Indiana Pacers 109.1 / 112.4; pace 105.9 vs 103.0",
+   "These teams' games average 233.5 total pts; line 234.5",
+   "Combined pace 104.4 vs league 101.9 (faster)",
+   "Stats lean: mixed (1 for, 1 against)"
+  ],
+  "unverified": false,
+  "watch_top2": true,
+  "updated": "2026-11-28T12:15:00Z"
+ },
+ {
+  "id": "okc-mil-under",
+  "day": "2026-11-28",
+  "tier": "likely",
+  "confidence": "Medium",
+  "sport": "NBA",
+  "game": "Thunder @ Bucks",
+  "start": "2026-11-28T19:00:00-06:00",
+  "pick": "Under 228.5",
+  "odds_at_pick": -110,
+  "odds_now": -110,
+  "move": "none",
+  "my_pct": 54.1,
+  "book_pct": 50.0,
+  "edge": 4.1,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "legs": "",
+  "why": "Model projects 225 points.",
+  "risk": "A Thunder blowout can still run up the score late.",
+  "bet_rule": "Watch only: below the win-rate bar. Under 228.5 at -115 or better.",
+  "basis": "lookup.py nba Bucks Thunder: model 58.2%. Blend 0.5/0.5. ScoresAndOdds line (read directly).",
+  "timing": "Wait: check the 5 PM Central injury report",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Bucks",
+   "away": "Thunder",
+   "mkt": "total",
+   "side": "under",
+   "line": 228.5
+  },
+  "stats": [
+   "Oklahoma City Thunder 10-9 (away 4-7), last 5 1-4 (-4.2 margin)",
+   "Milwaukee Bucks 2-17 (home 1-9), last 5 1-4 (-4.4 margin)",
+   "Net rating: Milwaukee Bucks -8.5 (29th of 30), Oklahoma City Thunder +4.2 (8th)",
+   "Scoring per game: Milwaukee Bucks 109.0 for / 120.2 against, Oklahoma City Thunder 113.0 / 110.4",
+   "Off/Def rating: Milwaukee Bucks 106.6 / 117.5, Oklahoma City Thunder 110.9 / 108.3; pace 102.3 vs 101.9",
+   "These teams' games average 226.3 total pts; line 228.5",
+   "Combined pace 102.1 vs league 101.9 (faster)",
+   "Stats lean: mixed (1 for, 1 against)"
+  ],
+  "unverified": false,
+  "watch_top2": true,
+  "updated": "2026-11-28T12:15:00Z"
+ },
+ {
+  "id": "bkn-cha-under",
+  "day": "2026-11-28",
+  "tier": "likely",
+  "confidence": "Medium",
+  "sport": "NBA",
+  "game": "Nets @ Hornets",
+  "start": "2026-11-28T17:00:00-06:00",
+  "pick": "Under 213.5",
+  "odds_at_pick": -110,
+  "odds_now": -110,
+  "move": "none",
+  "my_pct": 62.9,
+  "book_pct": 50.0,
+  "edge": 12.9,
+  "stake": 0,
+  "to_win": 0,
+  "kalshi_pct": null,
+  "poly_pct": null,
+  "pm_note": "not checked this run",
+  "result": "",
+  "legs": "",
+  "why": "Model projects well under 213.5.",
+  "risk": "Edge too big to trust without a cause; check injuries.",
+  "bet_rule": "Watch only: injury news not verified. Under 213.5 at -110 or better.",
+  "basis": "lookup.py nba Hornets Nets: model 75.8%. Blend 0.5/0.5. ScoresAndOdds line (read directly).",
+  "timing": "Wait: check the 5 PM Central injury report",
+  "live": {
+   "lg": "basketball/nba",
+   "home": "Hornets",
+   "away": "Nets",
+   "mkt": "total",
+   "side": "under",
+   "line": 213.5
+  },
+  "stats": [
+   "Brooklyn Nets 4-13 (away 3-7), last 5 1-4 (-12.6 margin)",
+   "Charlotte Hornets 4-13 (home 3-6), last 5 0-5 (-6.8 margin)",
+   "Net rating: Charlotte Hornets -6.3 (26th of 30), Brooklyn Nets -8.1 (28th)",
+   "Scoring per game: Charlotte Hornets 100.9 for / 110.7 against, Brooklyn Nets 110.8 / 118.9",
+   "Off/Def rating: Charlotte Hornets 102.5 / 112.5, Brooklyn Nets 108.3 / 116.3; pace 98.4 vs 102.2",
+   "These teams' games average 220.6 total pts; line 213.5",
+   "Combined pace 100.3 vs league 101.9 (slower)",
+   "Stats lean: mixed (1 for, 1 against)"
+  ],
+  "unverified": true,
+  "watch_top2": true,
+  "updated": "2026-11-28T12:15:00Z"
  }
 ]
